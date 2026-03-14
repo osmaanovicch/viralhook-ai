@@ -37,7 +37,8 @@ st.sidebar.metric("📊 Generations today", st.session_state.generations)
 
 col1, col2 = st.columns(2)
 topic = col1.text_input("📝 Topic", "make money online")
-platform = col2.selectbox("📱 Platform", ["TikTok", "YouTube Shorts", "Instagram Reels"])
+platform = col2.selectbox("📱 Platform", ["Shorts", "TikTok", "Reels"])
+
 
 if st.button("🚀 Generate", type="primary") and st.session_state.generations < 5:
     prompt = f"""{platform} script.
